@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Bermain dengan Warna</title>
+    <!-- Memuat jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f7f6;
+            padding-top: 40px;
+        }
+        #kotak {
+            width: 150px;
+            height: 150px;
+            background-color: green; /* Warna default awal */
+            margin: 25px auto;
+            border-radius: 6px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 6px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+        }
+        #btn-ungu { background-color: #8A2BE2; }
+        #btn-biru { background-color: #0000FF; }
+        #btn-hijau { background-color: #228B22; }
+        .btn-action { background-color: #ddd; color: #333; }
+    </style>
+</head>
+<body>
+
+    <h2>Bermain dengan Warna</h2>
+    
+    <div>
+        <button id="btn-ungu">Ungu</button>
+        <button id="btn-biru">Biru</button>
+        <button id="btn-hijau">Hijau</button>
+    </div>
+
+    <div id="kotak"></div>
+
+    <div>
+        <button id="btn-sembunyi" class="btn-action">Sembunyikan Kotak</button>
+        <button id="btn-tampil" class="btn-action">Tampilkan Kotak</button>
+    </div>
+
+    <p>Klik tombol warna untuk mengubah warna kotak.</p>
+    <p>Gunakan tombol Sembunyikan dan Tampilkan untuk menyembunyikan dan menampilkan kotak.</p>
+
+    <!-- Skrip jQuery -->
+    <script>
+        $(document).ready(function() {
+            $("#btn-ungu").click(function() {
+                $("#kotak").css("background-color", "#8A2BE2");
+            });
+
+            $("#btn-biru").click(function() {
+                $("#kotak").css("background-color", "#0000FF");
+            });
+
+            $("#btn-hijau").click(function() {
+                $("#kotak").css("background-color", "#228B22");
+            });
+
+                $("#btn-sembunyi").click(function() {
+                $("#kotak").hide();
+            });
+            $("#btn-tampil").click(function() {
+                $("#kotak").show();
+            });
+        });
+    </script>
+
+</body>
+</html>

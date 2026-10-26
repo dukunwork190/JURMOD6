@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 1 - JavaScript Prompt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 320px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background: transparent;
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" id="outputNama" readonly>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label>NIM</label>
+            <input type="text" id="outputNim" readonly>
+        </div>
+    </div>
+
+    <script>
+        let nama = prompt("Masukkan nama kamu:");
+        let nim = prompt("Masukkan nim kamu:");
+
+        if (nama !== null && nama.trim() !== "") {
+            document.getElementById("outputNama").value = nama;
+        }
+        if (nim !== null && nim.trim() !== "") {
+            document.getElementById("outputNim").value = nim;
+        }
+    </script>
+
+</body>
+</html>
