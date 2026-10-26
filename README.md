@@ -52,17 +52,33 @@
 
 # 
 
+# \---
+
+# 
+
 # \### \*\*4. Soal 1 (`soal1.html`)\*\*
 
 # Implementasi skrip JavaScript untuk memunculkan dialog `prompt()` saat halaman pertama kali dimuat guna meminta input \*\*Nama\*\* dan \*\*NIM\*\*, kemudian menampilkannya secara otomatis ke dalam elemen \*form\*.
 
 # 
 
+# \* \*\*Output Program Soal 1:\*\*  
+
+# &#x20; <img src="ss1soal.png" alt="Output Soal 1" width="500">
+
+# 
+
+# \---
+
+# 
+
 # \### \*\*5. Soal 2 (`soal2.html`)\*\*
 
-# Implementasi interaksi halaman web menggunakan \*\*jQuery\*\* yang mencakup:
+# Implementasi interaksi halaman web menggunakan \*\*jQuery\*\* yang mencakup \*DOM manipulation\*, \*event handling\*, serta \*effects/animation\* untuk mengubah warna kotak (Ungu, Biru, Hijau) serta menyembunyikan/menampilkan kotak.
 
-# \* \*\*Event Handling \& DOM Manipulation:\*\* Mengubah warna kotak secara dinamis saat tombol \*\*Ungu\*\*, \*\*Biru\*\*, atau \*\*Hijau\*\* diklik.
+# 
 
-# \* \*\*Animation \& Effects:\*\* Menyembunyikan (`hide()`) dan menampilkan kembali (`show()`) kotak melalui tombol \*\*Sembunyikan Kotak\*\* dan \*\*Tampilkan Kotak\*\*.
+# \* \*\*Output Program Soal 2:\*\*  
+
+# &#x20; <img src="ss2soal.png" alt="Output Soal 2" width="500">
 
